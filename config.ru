@@ -24,7 +24,7 @@ app = -> (env) do
       res.code,
       {
         'Content-Type' => 'application/json',
-        'Access-Control-Allow-Origin' => 'localhost',
+        'Access-Control-Allow-Origin' => 'http://localhost:3001',
         'Access-Control-Allow-Methods' => "GET, PUT, POST, DELETE, HEAD, OPTIONS"
       },
       [ res.body ]
