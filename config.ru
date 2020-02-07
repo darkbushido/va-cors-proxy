@@ -20,7 +20,11 @@ app = -> (env) do
   # binding.pry
   [
     res.code,
-    { "Content-Type" => "application/json" },
+    {
+      'Content-Type' => 'application/json',
+      'Access-Control-Allow-Origin' => '*',
+      'Access-Control-Allow-Methods' => "GET, PUT, POST, DELETE, HEAD, OPTIONS"
+    },
     [ res.body ]
   ]
 end
